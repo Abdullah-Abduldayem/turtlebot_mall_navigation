@@ -9,7 +9,7 @@ sudo apt-get install ros-indigo-turtlebot ros-indigo-turtlebot-apps ros-indigo-t
 
 To install this package, do the following:
 ```
-cd catkin/src
+cd catkin_ws/src
 git clone https://github.com/Abdullah-Abduldayem/turtlebot_mall_navigation.git
 ```
 
@@ -27,5 +27,5 @@ To command the turtlebot to move to a shop, open a new terminal and run the foll
 rosrun turtlebot_mall_navigation store_button.py <num>
 ```
 
-where `num` is a value between 1 and 12, inclusive. This command can be executed multiple times consequitively. Stores are visited in a first-come-first-served manner.
+where `<num>` is an integer between 1 and 12, inclusive. This command can be executed multiple times consequitively. Stores are visited in a first-come-first-served manner. The normal patrolling pattern resumes after all requested stores have been visited.
 
